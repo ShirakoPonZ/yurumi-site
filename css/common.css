@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/* 共通のスタイル */
+
+/* ヘッダー */
+header{
+    width: 100%;
+    background-color: yellowgreen;
+    height: 670px; /* 後で消す */
+}
+
+header img{
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/* メニューバー */
+nav{
+    position: absolute;
+    top: 610px;
+    width: 100%;
+    height: 60px;
+}
+
+nav img{
+    height: 40px;
+}
+
+nav ul{
+    width: 100%;
+    height: 65px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #999;
+}
+
+nav li{
+    color: blue;
+    font-size: 1.1rem;
+    font-weight: bold;
+    flex-wrap: wrap-reverse;
+}
+
+nav a:visited{
+    color: blue;
+}
+
+/* 追従メニューバー */
+
+.sticky{
+    position: absolute;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+
+.sticky img{
+    height: 40px;
+}
+
+.sticky ul{
+    width: 100%;
+    height: 65px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #999;
+}
+
+.sticky li{
+    color: blue;
+    font-size: 1.1rem;
+    font-weight: bold;
+    flex-wrap: wrap-reverse;
+}
+
+.sticky a:visited{
+    color: blue;
+}
+
+/* ――――――――――――――メニューバーここまで―――――――――――――― */
+
+
+#main-contents{
+    clear: both;
+    width: 100%;
+    padding-top: 30px;
+}
+
+
+/* ――――――――――――――紹介文―――――――――――――― */
+#introduction{
+    max-width: 1200px;
+    min-width: 1000px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+/* 紹介文太字 */
+.fon{
+    font-weight: bold;
+}
+
+#introduction h1{
+    text-align: center;
+}
+
+/* ――――――――――――――紹介文ここまで―――――――――――――― */
+
+.twitter{
+    margin: 0 auto;
+    margin-bottom: 3%;
+    background-color: transparent;
+}
+
+.twitter h1{
+    text-align: center;
+}
+
+.twitter-anchor{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.twitter img{
+    height: 100px;
+    width: 100px;
+}
+
+.timeline-area{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
+
+
+/* ――――――――――――――スタッフ紹介―――――――――――――― */
+.staffs-introduction{
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.staffs-1{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 4%;
+}
+
+.staffs-2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.staff{
+    width: 170px;
+    height: 220px;
+    min-width: 170px;
+    min-height: 220px;
+    margin: 40px 7%;
+    border-radius: 50%;
+    color: #fff;
+    /* background-color: #000; */
+}
+
+.staff span{
+    color: #000;
+    background-color: #fff;
+}
+
+.staff img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+/* ――――――――――――――スタッフ紹介ここまで―――――――――――――― */
+
+
+/* ――――――――――――――会場案内―――――――――――――― */
+
+.route-info{
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ########### 599px以下 ########### */
+/* スマホサイズ */
+@media (max-width: 599px) {}
+
+
+
+/* ########### 600px以上～768px以下 ########### */
+/* タブレットサイズ */
+@media (min-width: 600px) and (max-width: 768px) {}
+
+
+
+/* ########### 769px以上 ########### */
+/* PCサイズ */
+@media (min-width: 769px) {}
+
+
+
+/* ########### 1000px以上 ########### */
+/* PCサイズ */
+@media (min-width: 1000px) {}
+
+
