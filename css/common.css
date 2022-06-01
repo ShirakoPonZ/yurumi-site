@@ -45,6 +45,10 @@ nav li{
     flex-wrap: wrap-reverse;
 }
 
+nav a{
+    text-decoration: none;
+}
+
 nav a:visited{
     color: blue;
 }
