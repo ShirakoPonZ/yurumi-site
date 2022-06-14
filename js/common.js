@@ -19,6 +19,8 @@ $(function(){
 });
 
 
+
+
 // $(window).resize(function(){
 // 	var windowSize = $(window).width();
 // 		if(windowSize <= 990){

@@ -32,7 +32,7 @@ a{
 nav{
     position: absolute;
     top: 610px;
-    width: 100%;
+    min-width: 100%;
     height: max-content;
     min-height: 60px;
     background-color: #fff;
@@ -214,11 +214,11 @@ nav a:visited{
 }
 
 .staff{
-    width: 170px;
-    height: 220px;
+    max-width: 170px;
+    max-height: 220px;
     min-width: 170px;
     min-height: 220px;
-    margin: 40px 7%;
+    margin: 40px 0;
     border-radius: 50%;
 }
 
@@ -274,8 +274,16 @@ footer{
 /* スマホサイズ */
 @media (max-width: 599px) {
 
-    .contents{
-        display: none;
+    .staffs-1{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .staffs-2{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
 
 }
@@ -286,8 +294,16 @@ footer{
 /* タブレットサイズ */
 @media (min-width: 600px) and (max-width: 768px) {
 
-    .contents{
-        display: none;
+    .staffs-1{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .staffs-2{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
 
 }
@@ -298,13 +314,19 @@ footer{
 /* PCサイズ */
 @media (min-width: 769px) {
 
-    .contents{
-        display: none;
-    }
+.staff{
+    margin: 40px 5%;
+}
+.staffs-1{
+    display: flex;
+    justify-content: flex-start;
+}
 
-    .min-contents{
-        display: grid;
-    }
+.staffs-2{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20vh;
+}
 
 }
 
@@ -314,9 +336,19 @@ footer{
 /* PCサイズ */
 @media (min-width: 1000px) {
 
-    .contents{
-        display: flex;
-    }
+.staff{
+    margin: 40px 90px;
+}
+.staffs-1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.staffs-2{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20vh;
+}
 
 }
 
