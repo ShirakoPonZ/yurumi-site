@@ -1,0 +1,113 @@
+@charset"UTF-8";
+
+@use "media-query";
+@use "color-set";
+@use "header-style";
+@use 'sticky';
+
+
+/* 共通のスタイル */
+body{
+
+        #main-contents{
+            clear: both;
+            width: 100%;
+            padding-top: 30px;
+
+            #introduction{
+                width: 1200px;
+                margin: 0 15% 30vh 15%;
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+
+                h1{
+                    margin: 30px 0;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .fon{
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+
+        #twitter{
+            margin: 0 auto 30vh auto;
+
+            #twitter-anchor{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                #twitter-image{
+                    height: 100px;
+                    width: 100px;
+                    margin-right: 35px;
+                }
+                span{
+                    position: relative;
+                    top: -35px;
+                    text-align: center;
+                    font-size: 1.6rem;
+                    color: #000;
+                }
+            }
+
+            .timeline-area{
+                width: 400px;
+                height: 600px;
+                margin: 0 auto;
+            }
+
+
+            h1{
+                font-size: 1.6rem;
+                text-align: center;
+                margin-bottom: 3%;
+            }
+
+            #staffs-1{
+                display: flex;
+                justify-content: flex-end;
+
+                .staff{
+                    width: 170px;
+                    height: 220px;
+                    margin: 40px 0;
+                    border-radius: 50%;
+
+                    img{
+                        width: 220px;
+                        height: 200px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            #staffs-2{
+                display: flex;
+                justify-content: flex-start;
+
+                .staff{
+                    width: 170px;
+                    height: 220px;
+                    margin: 40px 0;
+
+                    img{
+                        width: 220px;
+                        height: 200px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+        }
+
+    footer{
+        width: 100%;
+        padding: 20px 0;
+        background-color: color(bg);
+    }
+}

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+header {
+  background-color: color(bg);
+}
+header img {
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .contents {
+  position: absolute;
+  top: 610px;
+  height: 65px;
+  width: 100%;
+  background-color: #fff;
+}
+header .contents img {
+  height: 40px;
+}
+header .contents ul {
+  width: 100%;
+  height: 65px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px #000;
+}
+header .contents ul li {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex-wrap: wrap-reverse;
+}
+header .contents ul li a {
+  padding: 20px 20px;
+  text-decoration: none;
+}
+header .contents ul li a:visited {
+  color: #000;
+  background-color: #fff;
+}
+header .contents ul li a:hover {
+  transition: 1ms;
+  height: 10px;
+  color: #fff;
+  background-color: #000;
+}
+
+/* 追従ナビゲーションのスタイル */
+header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+}
+header .sticky img {
+  height: 40px;
+}
+header .sticky ul {
+  width: 100%;
+  height: 65px;
+  float: left;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 2px 10px #000;
+}
+header .sticky ul li {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex-wrap: wrap-reverse;
+}
+header .sticky ul li a:hover {
+  transition: 1ms;
+  color: color(sub);
+  background-color: #000;
+}
+
+/* 共通のスタイル */
+body #main-contents {
+  clear: both;
+  width: 100%;
+  padding-top: 30px;
+}
+body #main-contents #introduction {
+  width: 1200px;
+  margin: 0 15% 30vh 15%;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+body #main-contents #introduction h1 {
+  margin: 30px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+body #main-contents #introduction .fon {
+  font-weight: bold;
+}
+body #twitter {
+  margin: 0 auto 30vh auto;
+}
+body #twitter #twitter-anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #twitter #twitter-anchor #twitter-image {
+  height: 100px;
+  width: 100px;
+  margin-right: 35px;
+}
+body #twitter #twitter-anchor span {
+  position: relative;
+  top: -35px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #000;
+}
+body #twitter .timeline-area {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+}
+body #twitter h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 3%;
+}
+body #twitter #staffs-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+body #twitter #staffs-1 .staff {
+  width: 170px;
+  height: 220px;
+  margin: 40px 0;
+  border-radius: 50%;
+}
+body #twitter #staffs-1 .staff img {
+  width: 220px;
+  height: 200px;
+  border-radius: 50%;
+}
+body #twitter #staffs-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+body #twitter #staffs-2 .staff {
+  width: 170px;
+  height: 220px;
+  margin: 40px 0;
+}
+body #twitter #staffs-2 .staff img {
+  width: 220px;
+  height: 200px;
+  border-radius: 50%;
+}
+body footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: color(bg);
+}
