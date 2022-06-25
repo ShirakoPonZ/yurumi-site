@@ -1,17 +1,29 @@
 @charset "utf-8";
 
-main{
+@use "color-set";
 
+main{
+    background-color: color-set.color(main);
     #main-contents{
+        padding-top: 30px;
 
         #introduction{
+            width: 800px;
+            margin: 0 auto 30vh auto;
+            font-size: 1.6rem;
+            line-height: 2.7rem;
 
             h1{
-
+                margin: 30px 280px;
+                text-align: center;
+                font-size: 2rem;
+                background: color-set.color(sub);
             }
 
             p{
-
+                .fon{
+                    font-weight: bold;
+                }
             }
         }
     }

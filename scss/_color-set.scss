@@ -7,10 +7,11 @@
 // カラーコードテンプレ
 $colors: (
     main: #fff,
-    sub: #fff,
-    accent: #fff,
-    bg: #fff
-);
+    sub: #bcff7a,
+    accent: #00bfff,
+    fontColor:#000,
+) !default;
+
 @function color($color){
     @return #{map-get($colors, $color)}
 };

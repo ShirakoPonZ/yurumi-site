@@ -3,38 +3,19 @@
 @use "media-query";
 @use "color-set";
 @use "header-style";
-@use 'sticky';
+@use "sticky";
+@use "main-style";
 
 
 /* 共通のスタイル */
 body{
-
-        #main-contents{
-            clear: both;
-            width: 100%;
-            padding-top: 30px;
-
-            #introduction{
-                width: 1200px;
-                margin: 0 15% 30vh 15%;
-                font-size: 1.6rem;
-                line-height: 2.5rem;
-
-                h1{
-                    margin: 30px 0;
-                    font-size: 2rem;
-                    text-align: center;
-                }
-                .fon{
-                    font-weight: bold;
-                }
-            }
-        }
-
-
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
 
         #twitter{
-            margin: 0 auto 30vh auto;
+            margin: 0 auto;
 
             #twitter-anchor{
                 display: flex;
@@ -61,7 +42,6 @@ body{
                 margin: 0 auto;
             }
 
-
             h1{
                 font-size: 1.6rem;
                 text-align: center;
@@ -73,14 +53,13 @@ body{
                 justify-content: flex-end;
 
                 .staff{
-                    width: 170px;
+                    width: 220px;
                     height: 220px;
-                    margin: 40px 0;
                     border-radius: 50%;
 
                     img{
                         width: 220px;
-                        height: 200px;
+                        height: 210px;
                         border-radius: 50%;
                     }
                 }
@@ -91,13 +70,12 @@ body{
                 justify-content: flex-start;
 
                 .staff{
-                    width: 170px;
+                    width: 220px;
                     height: 220px;
-                    margin: 40px 0;
 
                     img{
                         width: 220px;
-                        height: 200px;
+                        height: 210px;
                         border-radius: 50%;
                     }
                 }
@@ -108,6 +86,7 @@ body{
     footer{
         width: 100%;
         padding: 20px 0;
-        background-color: color(bg);
+        background-color: color-set.color(main);
     }
 }
+
